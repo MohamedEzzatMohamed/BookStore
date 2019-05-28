@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" android:background="@color/backGround">
+
+    <ImageView
+        android:id="@+id/iv_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/book_do_not_be_sad"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        >
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="35"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:textColor="@android:color/background_dark"
+            android:text="BookName" />
+
+        <TextView
+            android:id="@+id/textview_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="35"
+            android:maxLines="1"
+            android:textStyle="italic"
+            android:layout_marginBottom="3dp"
+            android:textColor="@android:color/background_dark"
+            android:text="Authors" />
+
+
+        <TextView
+            android:id="@+id/textview_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:layout_marginBottom="3dp"
+            android:text="02/5/2015"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+    <TextView
+        android:id="@+id/textview_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="35"
+        android:maxLines="1"
+        android:layout_marginBottom="3dp"
+        android:textColor="@android:color/background_dark"
+        android:text="Category" />
+
+    <TextView
+        android:id="@+id/textview_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="60"
+        android:maxLines="1"
+        android:layout_marginBottom="3dp"
+        android:textColor="@android:color/primary_text_light_nodisable"
+        android:text="description" />
+
+    </LinearLayout>
+</LinearLayout>
